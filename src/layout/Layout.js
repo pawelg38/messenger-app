@@ -1,11 +1,12 @@
 import classes from './Layout.module.scss';
+import Box from '@material-ui/core/Box';
 
 function Layout(props) {
   return (
-    <div className={classes.container}>
-      Layout here...!
+    <Box className={classes.container} boxShadow={1}>
       {props.children}
-    </div>
+      cos tam
+    </Box>
   )
 }
 
