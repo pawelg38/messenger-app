@@ -5,7 +5,6 @@ function Layout(props) {
   return (
     <Box className={classes.container} boxShadow={1}>
       {props.children}
-      cos tam
     </Box>
   )
 }
