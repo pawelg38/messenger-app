@@ -1,4 +1,5 @@
 import classes from './SignIn.module.scss';
+import Box from '@material-ui/core/Box';
 
 function SignIn(props) {
 
@@ -7,7 +8,9 @@ function SignIn(props) {
     props.auth.signInWithPopup(provider);
   }
   return (
-    <button onClick={signInWithGoogle}>Sign In With Google</button>
+    <Box className={classes.container} boxShadow={5}>
+      <button className={classes.signInBtn} onClick={signInWithGoogle}>Sign In With Google</button>
+    </Box>
   )
 }
 

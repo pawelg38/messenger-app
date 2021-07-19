@@ -8,7 +8,6 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
   apiKey: "AIzaSyB_vdOpJp7onAWnGIouA9fAB9bk6pqPS5o",
@@ -28,10 +27,8 @@ function App() {
 
   return (
     <Layout>
-      <section>
         <SignOut auth={auth}/>
         {user ? <Chat firestore={firestore} auth={auth} firebase={firebase} /> : <SignIn firebase={firebase} auth={auth}/>}
-      </section>
     </Layout>
   );
 }

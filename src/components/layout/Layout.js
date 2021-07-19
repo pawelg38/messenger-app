@@ -3,7 +3,7 @@ import Box from '@material-ui/core/Box';
 
 function Layout(props) {
   return (
-    <Box className={classes.container} boxShadow={1}>
+    <Box className={classes.container} boxShadow={5}>
       {props.children}
     </Box>
   )

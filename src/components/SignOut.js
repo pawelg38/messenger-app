@@ -2,7 +2,7 @@ import classes from './SignOut.module.scss';
 
 function SignOut(props) {
   return props.auth.currentUser && (
-    <button onClick={()=>props.auth.signOut()}>SignOut</button>
+    <button className={classes.btn} onClick={()=>props.auth.signOut()}>Logout</button>
   )
 }
 

@@ -1,9 +1,33 @@
 .message {
   color: #fff;
+  width: fit-content;
+  padding: 5px 10px;
+  margin: 5px 5px;
+  border-radius: 5px;
+  display: flex;
+  max-width: 50%;
+  word-break: break-all;
+
+  img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
 }
 .sent {
-  background-color: rgba(#000, 1);
+  background-color: rgba(rgb(93, 93, 255), 1);
+  margin-left: auto;
+  flex-direction: row-reverse;
+
+  img {
+    margin-left: 10px;
+  }
 }
 .received {
-  background-color: rgba(#000, .3);
+  background-color: rgba(#fff, 1.0);
+  color: #000;
+  
+  img {
+    margin-right: 10px;
+  }
 }
